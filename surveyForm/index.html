@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Practice Survey Form</h1>
+    <p id="description">Please fill out this form to sell your soul</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">Age: <input id="number" type="number" name="number" min="13" max="120" placeholder="Age in years" /></label>
+        <label for="dropdown">Favorite Craft?
+            <select id="dropdown" name="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Needle Arts</option>
+                <option value="2">Baking</option>
+                <option value="3">Resin</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+        <p>Ice Cream is the best dessert.</p>
+            <label for="agree"><input id="agree" type="radio" name="opinion" class="inline" value="I agree!" /> I agree!</label>
+            <label for="disagree"><input id="disagree" type="radio" name="opinion" class="inline" value="I beg to differ." /> I beg to differ.</label>
+        <p>How neurospicy are you?</p>
+            <label for="adhd"><input id="adhd" type="checkbox" name="adhd" class="inline" value="adhd" /> ADHD</label>
+            <label for="autism"><input id="autism" type="checkbox" name="autism" class="inline" value="autism" /> Austism</label>
+            <label for="cptsd"><input id="cptsd" type="checkbox" name="cptsd" class="inline" value="cptsd" /> CPTSD</label>
+            <label for="other"><input id="other" type="checkbox" name="other" class="inline" value="other" /> Other</label>
+        <label for="about">Tell me more about you:
+            <textarea id="about" name="about" rows="3" cols="30" placeholder="I like coding instead of dealing with my emotions..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit To My Will" />
+    </form>
+</body>
+</html>

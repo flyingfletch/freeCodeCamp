@@ -1,0 +1,14 @@
+h1, h2  {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    display: inline-block;
+}
+
+#image  {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
